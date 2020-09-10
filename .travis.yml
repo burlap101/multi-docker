@@ -15,9 +15,8 @@ after_success:
   - docker build -t burlap101/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  # Take tohose images and push them to docker hub
+  # Take those images and push them to docker hub
   - docker push burlap101/multi-client
   - docker push burlap101/multi-nginx
   - docker push burlap101/multi-server
   - docker push burlap101/multi-worker
-  
