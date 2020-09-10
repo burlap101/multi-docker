@@ -20,3 +20,4 @@ after_success:
   - docker push burlap101/multi-nginx
   - docker push burlap101/multi-server
   - docker push burlap101/multi-worker
+  
